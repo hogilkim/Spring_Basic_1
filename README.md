@@ -4,6 +4,15 @@ First, developing the app using only the 'core' Spring Framework and build on us
 
 --2022--
 
-July 1st - build simple app - member & Order
+--July 1st -- 
+build simple app - member & Order
 
-July 2nd - To get DIP principle, created AppConfig for DI(Dependency Injection)
+-- July 2nd --
+To get DIP principle, created AppConfig for DI(Dependency Injection)
+
+-- July 3rd --
+**Refactor AppConfig**: divide interface and implementation. This makes service depend on 'interface' of Repositories (DIP principle).
+This will make changing easier!
+App Config is an IoC (Inversion of Control) container OR DI (Dependency Injection) Container.
+--
+Conversion to Spring Framework
