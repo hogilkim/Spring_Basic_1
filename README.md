@@ -16,3 +16,6 @@ This will make changing easier!
 App Config is an IoC (Inversion of Control) container OR DI (Dependency Injection) Container.
 --
 Conversion to Spring Framework
+
+-- July 10th --
+Registered Bean Searches - by name and type
