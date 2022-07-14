@@ -19,3 +19,6 @@ Conversion to Spring Framework
 
 -- July 10th --
 Registered Bean Searches - by name and type
+
+-- July 13th --
+Registered Bean Searches for same types
