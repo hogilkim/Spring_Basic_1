@@ -27,4 +27,7 @@ Registered Bean Searches for same types
 Search Parent-Child Beans. Once Search registered Parent Bean, Child Beans are also searched. Java Beans are all Object Type
 
 -- July 17th -- 
+Spring's BeanDefinition's abstractions allows various system forms
 Register Bean using XML - originally, registered bean in AppConfig
+
+Making Beans has two methods - directly, or through factory Bean method (ex: appConfig). Usually factory Bean method is used.
