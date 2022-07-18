@@ -25,3 +25,6 @@ Registered Bean Searches for same types
 
 --July 16th --
 Search Parent-Child Beans. Once Search registered Parent Bean, Child Beans are also searched. Java Beans are all Object Type
+
+-- July 17th -- 
+Register Bean using XML - originally, registered bean in AppConfig
