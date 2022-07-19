@@ -31,3 +31,7 @@ Spring's BeanDefinition's abstractions allows various system forms
 Register Bean using XML - originally, registered bean in AppConfig
 
 Making Beans has two methods - directly, or through factory Bean method (ex: appConfig). Usually factory Bean method is used.
+
+-- July 18th -- 
+problem with DI container: always makes new object whenever request is called - not appropriate for massive traffic.
+Solution: make the object to be created only once & then shared
