@@ -35,3 +35,5 @@ Making Beans has two methods - directly, or through factory Bean method (ex: app
 -- July 18th -- 
 problem with DI container: always makes new object whenever request is called - not appropriate for massive traffic.
 Solution: make the object to be created only once & then shared
+
+SINGLE TON PATTERN: this guarantees only one object will be created per server

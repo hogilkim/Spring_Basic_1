@@ -9,7 +9,7 @@ import springbasic1.core.Member.MemberService;
 public class SingletonTest {
     @Test
     @DisplayName("Pure DI Container without Spring")
-    void pureContainer(){
+    void pureContainer() {
         AppConfig appConfig = new AppConfig();
         // 1. Makes new object whenever called
         MemberService memberService1 = appConfig.memberService();
@@ -23,5 +23,17 @@ public class SingletonTest {
 
         // memberService 1 != memberService2
         Assertions.assertThat(memberService1).isNotSameAs(memberService2);
+    }
+
+    @Test
+    @DisplayName("Using Singleton-pattern applied object")
+    void singletonServiceTest(){
+        SingletonService singletonService1 = SingletonService.getInstance();
+        SingletonService singletonService2 = SingletonService.getInstance();
+
+        System.out.println("singletonService1 = " + singletonService1);
+        System.out.println("singletonService2 = " + singletonService2);
+
+        Assertions.assertThat(singletonService1).isSameAs(singletonService2);
     }
 }
