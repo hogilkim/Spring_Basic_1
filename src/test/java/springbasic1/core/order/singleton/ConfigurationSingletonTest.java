@@ -30,7 +30,17 @@ public class ConfigurationSingletonTest {
         // we can see that they are all same even though in AppConfig, returned "NEW" memberRepository
         Assertions.assertThat(memberService.getMemgerRepository()).isSameAs(memberRepository);
         Assertions.assertThat(orderService.getMemgerRepository()).isSameAs(memberRepository);
+    }
 
+    @Test
+    void configurationDeep(){
+        ApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class);
+        AppConfig bean = ac.getBean(AppConfig.class);
 
+        System.out.println("bean = " + bean.getClass());
+        // if it is a pure class, it should be : class ~~.core.AppConfig
+        // but instead printed AppConfig$$EnhancerBySpringCGLIB$$de85d203
+        // This is modified by Spring, which enables Singleton!
+        // Inside this modified code: if Bean exists per method, return ELSE make new Bean and return
     }
 }
