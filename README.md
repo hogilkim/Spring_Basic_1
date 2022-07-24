@@ -41,3 +41,5 @@ SINGLE TON PATTERN: this guarantees only one object will be created per server
 
 -- July 23rd --
 Spring automatically make beans as Singleton - don't need to manually write code for it -> does not violate DIP, OCP
+
+Spring Bean should be always Stateless
