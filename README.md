@@ -58,3 +58,6 @@ However, SpringBoot's "CoreApplication" 's @SpringBootApplication includes @Comp
 "@Controller, @Service, @Repository, @Configuration" all includes "@Component"
 
 Spring Boot Filters: try to fit to the default Spring Filter options
+
+Duplicate Registration of component & ConflictingBeanDefinitionException -> happens when same name is registered
+when there is conflict btw automatic & manual Bean Registration, you should enable overriding (spring.main.allow-bean-definition-overriding=true)
