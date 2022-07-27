@@ -53,3 +53,8 @@ Why "@Configuration" is also target to be registered? -> b/c @Configuration also
 
 But using @Component, cannot do "DI" -> use "@Autowired", which automatically handles "DI"
 SO "@Autowired" is used for "@Component"
+
+However, SpringBoot's "CoreApplication" 's @SpringBootApplication includes @ComponentScan
+"@Controller, @Service, @Repository, @Configuration" all includes "@Component"
+
+Spring Boot Filters: try to fit to the default Spring Filter options
