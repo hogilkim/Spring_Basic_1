@@ -46,3 +46,10 @@ Spring Bean should be always Stateless
 
 -- July 24th--
 Registered at Bean -> even though returned "NEW" repository, all references to the same object
+
+-- July 27th --
+"@ComponentScan" registers all classes that have "@Component" to Spring Bean. (No need to manually register Beans)
+Why "@Configuration" is also target to be registered? -> b/c @Configuration also has @Component in its source code
+
+But using @Component, cannot do "DI" -> use "@Autowired", which automatically handles "DI"
+SO "@Autowired" is used for "@Component"
