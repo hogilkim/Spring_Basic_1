@@ -61,3 +61,10 @@ Spring Boot Filters: try to fit to the default Spring Filter options
 
 Duplicate Registration of component & ConflictingBeanDefinitionException -> happens when same name is registered
 when there is conflict btw automatic & manual Bean Registration, you should enable overriding (spring.main.allow-bean-definition-overriding=true)
+
+-- July 31st --
+Ways to DI:
+1. Constructor - for compulsory & immutable
+2. Setters - for non-compulsory & mutable (@Autowird(requred=false))
+3. Field injection ex) @Autowired private final DiscountPolicy discountPolicy;(X recommended)
+4. Method injection - Normally not used
